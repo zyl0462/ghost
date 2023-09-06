@@ -6,7 +6,7 @@ http:
     script:
 
         - match: ^https?:\/\/www\.longstargpt\.com
-          name: "GPT使用会员功能"
+          name: "GPT"
           type: request
           timeout: 30
           require-body: true
@@ -15,6 +15,6 @@ http:
     mitm:
         - "longstargpt.com"
 script-providers:
-    "GPT使用会员功能":
+    "GPT":
         url: https://raw.githubusercontent.com/zyl0462/ghost/main/gpt.js
         interval: 86400
