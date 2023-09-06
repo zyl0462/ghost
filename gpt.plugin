@@ -1,0 +1,11 @@
+#!name=GPT
+#!desc=GPT使用会员功能
+#!author=zyl0462
+
+[script]
+
+http-request ^https?:\/\/www\.longstargpt\.com script-path=https://github.com/zyl0462/ghost/raw/main/gpt.js,tag = GPT ,enable = true ,requires-body = true
+
+[mitm]
+
+hostname = longstargpt.com
