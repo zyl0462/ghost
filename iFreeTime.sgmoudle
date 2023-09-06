@@ -24,4 +24,4 @@ DOMAIN-SUFFIX,gvt1.com,REJECT
 [Script]
 爱阅跳广告直接领取 = type=http-response,script-path=https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/kp.js,pattern=^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads.+,max-size=0,requires-body=true,timeout=10,script-update-interval=0,enable=true
 [MITM]
-hostname = %APPEND%,api-access.pangolin-sdk-toutiao.com
+hostname = %APPEND% api-access.pangolin-sdk-toutiao.com
