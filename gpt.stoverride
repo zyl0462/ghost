@@ -2,8 +2,10 @@ name: "GPT"
 desc: "GPT使用会员功能"
 
 http:
+
     script:
-        - match: ^https?:\/\/www\.longstargpt\.com.+
+
+        - match: ^https?:\/\/www\.longstargpt\.com
           name: "GPT使用会员功能"
           type: request
           timeout: 30
@@ -13,6 +15,6 @@ http:
     mitm:
         - "longstargpt.com"
 script-providers:
-    "iFreeTime跳广告":
+    "GPT使用会员功能":
         url: https://raw.githubusercontent.com/zyl0462/ghost/main/gpt.js
         interval: 86400
