@@ -8,4 +8,4 @@ http-request ^https?:\/\/www\.longstargpt\.com script-path=https://raw.githubuse
 
 [mitm]
 
-hostname = longstargpt.com
+hostname = longstargpt.com, *.longstargpt.com
