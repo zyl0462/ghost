@@ -12,7 +12,7 @@ if(method == 'GET'){
     let new_body = $request.body;
     if(new_body.indexOf('vip=false') != -1){
         new_body = new_body.replace('vip=false','vip=true');
-        $done({ body:new_body});
+        $done({body:new_body});
     }else{
         $done({});
     }
