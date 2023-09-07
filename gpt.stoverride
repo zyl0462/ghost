@@ -11,7 +11,7 @@ http:
           max-size: 1048576
           binary-mode: false
     mitm:
-        - '*.longstargpt.com:*'
+        - longstargpt.com
 script-providers:
     GPT:
         url: https://raw.githubusercontent.com/zyl0462/ghost/main/gpt.js
