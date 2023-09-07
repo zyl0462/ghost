@@ -6,7 +6,7 @@ if(method == 'GET'){
         new_url =  new_url.replace('vip=false','vip=true');
         $done({url:new_url});
     }else{
-        $done()
+        $done({});
     }
 }else{
     let new_body = $request.body;
@@ -14,6 +14,6 @@ if(method == 'GET'){
         new_url =  new_body.replace('vip=false','vip=true');
         $done({ body:new_body});
     }else{
-        $done()
+        $done({});
     }
 }
