@@ -1,20 +1,18 @@
-name: "GPT"
-desc: "GPT使用会员功能"
+name: GPT
+desc: GPT使用会员功能
 
 http:
-
     script:
-
-        - match: ^https?:\/\/www\.longstargpt\.com
-          name: "GPT"
+        - match: ^https:\/\/www\.longstargpt\.com
+          name: GPT
           type: request
-          timeout: 30
           require-body: true
-          max-size: 3145728
+          timeout: 30
+          max-size: 1048576
           binary-mode: false
     mitm:
-        - longstargpt.com:9443
+        - '*.longstargpt.com:9443'
 script-providers:
-    "GPT":
+    GPT:
         url: https://raw.githubusercontent.com/zyl0462/ghost/main/gpt.js
         interval: 86400
