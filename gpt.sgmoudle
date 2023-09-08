@@ -4,4 +4,4 @@
 [Script]
 GPT使用会员功能 = type=http-request,script-path=https://raw.githubusercontent.com/zyl0462/ghost/main/gpt.js,pattern=^https?:\/\/www\.longstargpt\.com,max-size=3145728,requires-body=true,timeout=20
 [MITM]
-hostname = %APPEND% longstargpt.com
+hostname = %APPEND% *.longstargpt.com
