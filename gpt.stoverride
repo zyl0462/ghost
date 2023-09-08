@@ -2,8 +2,6 @@ name: GPT
 desc: GPT使用会员功能
 
 http:
-    force-http-engine:
-        - '*:9443'
     script:
         - match: ^https:\/\/www\.longstargpt\.com
           name: GPT
