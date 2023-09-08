@@ -2,13 +2,15 @@ name: GPT
 desc: GPT使用会员功能
 
 http:
+    force-http-engine:
+        - '*:9443'
     script:
         - match: ^https:\/\/www\.longstargpt\.com
           name: GPT
           type: request
-          require-body: true
           timeout: 30
-          max-size: 1048576
+          require-body: true
+          max-size: 3145728
           binary-mode: false
     mitm:
         - '*.longstargpt.com'
