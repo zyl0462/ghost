@@ -3,7 +3,7 @@ desc: GPT使用会员功能
 
 http:
     script:
-        - match: https://www.longstargpt.com
+        - match: ^https://www.longstargpt.com
           name: GPT
           type: request
           timeout: 30
